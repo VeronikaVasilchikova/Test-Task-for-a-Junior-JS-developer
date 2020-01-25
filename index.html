@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test Task for a Junior JS developer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="list task">
+                <h2>Current list of cities</h2>
+                <ul>
+
+                </ul>
+            </div>
+
+            <div class="first-task task">
+                <h2>The first task</h2>
+                <p>
+                    Create a method which returns the name of the northernmost, easternmost,
+                    southernmost or westernmost city from the list, as requested by the caller
+                </p>
+                <p>The northernmost city is <span id="northernmost"></span></p>
+                <p>The southernmost city is <span id="southernmost"></span></p>
+                <p>The easternmost city is <span id="easternmost"></span></p>
+                <p>The westernmost city is <span id="westernmost"></span></p>
+            </div>
+
+            <div class="second-task task">
+                <h2>The second task</h2>
+                <p>
+                    Pass longitude and latitude as parameters, and return the name of the city that
+                    is closest to that location
+                </p>
+                <form name="latitude_longitude">
+                    <label for="any_latitude">Any latitude</label>
+                    <input id="any_latitude" type="number" step="any" placeholder="Please, input any latitude" required>
+
+                    <label for="any_longitude">Any longitude</label>
+                    <input id="any_longitude" type="number" step="any" placeholder="Please, input any longitude" required>
+                    <button type="submit">Submit</button>
+                </form>
+                <p>The name of the city that is closest to that location is <span id="closest"></span></p>
+            </div>
+
+            <div class="third-task task">
+                <h2>The third task</h2>
+                <p>
+                    Return a single string containing just the state abbreviations from the list of cities, each
+                    separated by a space. The method should eliminate duplicate states. The result string
+                    should not have leading or trailing spaces
+                    <span id="abbreviation"></span>
+                </p>
+            </div>
+
+            <div class="forth-task task">
+                <h2>The forth task</h2>
+                <p>Add an ability to search by states (show list of cities of the state)</p>
+                <input id="search_state" type="text" placeholder="Please, enter the name state by which you want to search a list of cities">
+                <p>Result: <span id="city_by_state"></span></p>
+            </div>
+
+            <div class="fifth-task task">
+                <h2>The fifth and sixth task</h2>
+                <p>
+                    Create a tool to add cities with coordinates and states manually on the UI
+                    Add a possibility to save the list of cities in a localStorage and pull
+                    it in common list automatically after page reload
+                </p>
+                <form name="new_city">
+                    <label for="city_name">New city name</label>
+                    <input id="city_name" type="text" placeholder="Please, input new city name" required>
+
+                    <label for="state_name">The state name of this city</label>
+                    <input id="state_name" type="text" placeholder="Please, input the state name of this city" required>
+
+                    <label for="latitude">The latitude of this city</label>
+                    <input id="latitude" type="number" step="any" placeholder="Please, input the latitude of this city" required>
+
+                    <label for="longitude">The longitude of this city</label>
+                    <input id="longitude" type="number" step="any" placeholder="Please, input the longitude of this city" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+           <div class="task">
+                <div id="my_dataviz">
+                    <h2>The seventh task</h2>
+                    <p>
+                        You can do a visualization with d3 chart.
+                        You can copy a solution from
+                        <a href="https://www.d3-graph-gallery.com/graph/pie_basic.html" target="_blank">
+                            that link </a>​
+                        and apply it to your project.
+                    </p>
+                </div>
+           </div>
+
+        </div>
+
+
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
